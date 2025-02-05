@@ -58,7 +58,7 @@ void rc_reciever_loop() {
   digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
   
   rc.update();
-  
+  rc.print();
   unsigned long currentMillis = millis();
   if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;

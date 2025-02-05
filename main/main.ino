@@ -7,11 +7,11 @@
 void setup()
 {
 
- rc_setup();
+    rc_setup();
 
- pozyx_setup();
+    pozyx_setup();
 
- thermal_setup();
+    // thermal_setup();
 
 
 }
@@ -20,19 +20,17 @@ void setup()
 void loop()
 {
 
- rc_reciever_loop();
- delay(1000);
- 
- Serial.print("Pozyx\n");
- pozyx_loop();
- Serial.print("\n");
- delay(1000);
+    rc_reciever_loop();
+    // delay(1000);
 
- 
- Serial.print("Thermal Camera\n");
- thermal_loop();
- Serial.print("\n");
- delay(1000);
+    Serial.print("Pozyx\n");
+    pozyx_loop();
+    Serial.print("\n");
+    // delay(1000);
 
-  
+
+    // Serial.print("Thermal Camera\n");
+    // thermal_loop();
+    // Serial.print("\n");
+    // delay(1000);
 }
