@@ -133,23 +133,21 @@ void Sensors::update()
 
 void Sensors::print()
 {
- // /*
+  /*
   Serial.print(this->data.gyr[0]);// roll rate
   Serial.print(",");
   Serial.print(this->data.gyr[1]);// pitch rate
   Serial.print(",");
   Serial.print(this->data.gyr[2]);// yaw rate
   Serial.print(",");
- // */
-  
- // /*
+ 
   Serial.print(this->data.acc[0]); // x acc 
   Serial.print(",");
   Serial.print(this->data.acc[1]); // y acc
   Serial.print(",");
   Serial.print(this->data.acc[2]); // z acc
   Serial.print(",");
- // */
+ 
 
 //  Serial.print(this->data.mag[0]);
 //  Serial.print(",");
@@ -157,7 +155,7 @@ void Sensors::print()
 //  Serial.print(",");
 //  Serial.print(this->data.mag[2]);
 //  Serial.print(",");
-// /*
+	*/
 
   Serial.print(this->data.euler[0]); //roll angle
   Serial.print(",");
