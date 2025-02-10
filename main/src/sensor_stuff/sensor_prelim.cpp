@@ -81,7 +81,6 @@ void thermal_setup() {
 }
 
 void thermal_loop() {
-    delay(500);
     if (mlx.getFrame(frame) != 0) {
         Serial.println("Failed");
         return;

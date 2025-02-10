@@ -152,9 +152,9 @@ void RC_PILOT::update()
 void RC_PILOT::print()
 {
   Serial.print("RC: "); 
+  Serial.print(  this->rc_in.THR);   Serial.print(", "); 
   Serial.print(  this->rc_in.ROLL);  Serial.print(", "); 
   Serial.print(  this->rc_in.PITCH); Serial.print(", "); 
-  Serial.print(  this->rc_in.THR);   Serial.print(", "); 
   Serial.print(  this->rc_in.YAW);   Serial.print(", ");
   Serial.print(  this->rc_in.AUX);   Serial.print(", "); 
   Serial.println(this->rc_in.AUX2);

@@ -1,6 +1,3 @@
-
-
-
 #ifndef RC_PILOT_READING_h
 #define RC_PILOT_READING_h
 
